@@ -81,10 +81,11 @@
         $musicBtn = $header.find('.musicBtn');
     $('body').click(function () {
         musicAudio.play();
+        $musicBtn.css('display', 'block')
+            .addClass('move');
     })
 
-    $musicBtn.css('display', 'block')
-        .addClass('move');
+
 </script>
 </body>
 </html>
