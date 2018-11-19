@@ -79,7 +79,10 @@
     var musicAudio = $('#musicAudio')[0];
     var $header = $('.header'),
         $musicBtn = $header.find('.musicBtn');
-    musicAudio.play();
+    $('body').click(function () {
+        musicAudio.play();
+    })
+
     $musicBtn.css('display', 'block')
         .addClass('move');
 </script>
