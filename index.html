@@ -80,11 +80,17 @@
     var $header = $('.header'),
         $musicBtn = $header.find('.musicBtn');
 
-        musicAudio.play();
+
         $musicBtn.css('display', 'block')
             .addClass('move');
-   
-
+    musicAudio.play();
+    document.addEventListener('WeixinJSBridgeReady', function() {
+        alert(1);
+        musicAudio.play();
+    })
+    document.addEventListener('touchstart', function() {
+        alert(2);        musicAudio.play();
+    })
 
 </script>
 </body>
